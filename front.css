@@ -1,0 +1,138 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  background-color:#0c0f2d;
+ }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding:15px;
+}
+.aside img{
+  width:550px;
+  height:90px;
+  cursor: pointer;
+}
+.aside p{
+  color:red;
+  font-size:40px;
+  padding:15px;
+}
+.aside_2 p{
+  font-size:80px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:5px;
+  color: #FFFFFF;
+}
+.img{
+  width: 450px;
+  height:300px;
+}
+.button{
+  padding:35px;
+}
+.button a{
+  text-decoration:none;
+  color: #FFFFFF;
+   width: 160px;
+  height:25px;
+  cursor: pointer;
+  margin:60px;
+  padding:20px;
+  padding-left:60px;
+  padding-right:60px;
+  background-color:#008000;
+  border-radius:10px;
+}
+.button_2{
+ margin-left:50px;
+ margin-top:17px;
+}
+.button_2 summary{
+  width:200px;
+  padding:20px;
+  margin-top:10px;
+  color: #FFFFFF;
+  border-radius:10px;
+  font-size:1.3em;
+  outline:1px solid green;
+}
+.button_2 summary:hover{
+  background-color:green;
+  outline:none;
+}
+.button_2 p{
+  width: 450px;
+  color:white;
+  font-size:1.2em;
+  padding:15px;
+  line-height: 1.2em;
+}
+.aside {
+  background-color: #0c0f2d;
+  padding:0px;
+  text-align: center;
+  height:130px;
+}
+.aside_2{
+  background-color: #0c0f2d;
+  padding: 15px;
+  text-align: center;
+  height:300px;
+}
+.aside_3{
+  background-color: #0c0f2d;
+  text-align: center;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (max-width:600px){
+ .aside img{
+   width:280px;
+   height:80px;
+}
+.aside p{
+  font-size:38px;
+  padding:8px;
+} 
+.aside_2 p{
+  font-size:60px;
+padding:0px;
+}
+.img{
+ width:300px;
+ height:250px;
+}
+.button a{
+  margin:0px; 
+}
+.button_2 p{
+  width:300px;
+  color:white;
+  font-size:1.3em;
+  padding:0px;
+  line-height: 1.1em;
+}
+.button_2{
+ margin-left:20px;
+}
+.button_2 summary{
+  position:relative;
+  left:8%;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  .col-3 {width:50%;}
+}
